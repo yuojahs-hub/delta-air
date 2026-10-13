@@ -8,6 +8,12 @@ $(window).scroll(function () {
     } else {
         $("#header").removeClass("active");
     }
+
+    if (scrollTop >= 800) {
+        $(".top").addClass("opacity");
+    } else {
+        $(".top").removeClass("opacity");
+    }
 });
 
 // 모바일 메뉴
@@ -27,3 +33,11 @@ $("#mNav button").click(function () {
 $(".firstMenu").click(function () {
     $(this).next(".footer_dropdown").slideToggle(300);
 });
+
+// top 버튼
+// $(window).scroll(function () {
+//     let scrollTop = $(window).scrollTop();
+//     if (scrollTop > 800) {
+//         $(".top").addClass("show");
+//     }
+// });
