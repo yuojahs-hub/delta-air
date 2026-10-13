@@ -65,7 +65,7 @@
     z-index: 999;
     background-color: #afabdf;
     width: 45%;
-    padding: 30px 60px;
+    padding: 30px 0 30px 60px;
     box-sizing: border-box;
 
     transform: translateX(-100%);
